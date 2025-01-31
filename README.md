@@ -180,7 +180,7 @@ try:
 
                 # Check if column already exists
                 if column_exists(table_name, column_name):
-                    print(f"\n⚠Skipping column addition: '{column_name}' already exists in '{table_name}'.")
+                    print(f"\nSkipping column addition: '{column_name}' already exists in '{table_name}'.")
                     continue
 
             cursor.execute(query)
@@ -206,7 +206,7 @@ def view_table(table_name):
             for row in rows:
                 print(row)
         else:
-            print("⚠ No data found.")
+            print("No data found.")
     except Exception as e:
         print("Error:", e)
     finally:
